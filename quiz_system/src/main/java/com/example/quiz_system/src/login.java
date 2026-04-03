@@ -8,6 +8,7 @@ public class login extends JFrame implements ActionListener{
  
     JButton rules, back;
     JTextField tfname;
+
     
     login() {
         getContentPane().setBackground(Color.WHITE);
@@ -67,4 +68,5 @@ public class login extends JFrame implements ActionListener{
     public static void main(String[] args) {
         new login();
     }
+    
 }
