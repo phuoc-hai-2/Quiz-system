@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Quiz extends JFrame implements ActionListener {
+public class quiz extends JFrame implements ActionListener {
     
     String questions[][] = new String[10][5];
     String answers[][] = new String[10][2];
@@ -21,7 +21,7 @@ public class Quiz extends JFrame implements ActionListener {
     
     String name;
     
-    Quiz(String name) {
+    quiz(String name) {
         this.name = name;
         setBounds(50, 0, 1440, 850);
         getContentPane().setBackground(Color.WHITE);
@@ -220,7 +220,7 @@ public class Quiz extends JFrame implements ActionListener {
                 }
             }
             setVisible(false);
-            new Score(name, score);
+            new score(name, score);
         }
     }
     
@@ -275,7 +275,7 @@ public class Quiz extends JFrame implements ActionListener {
                     }
                 }
                 setVisible(false);
-                new Score(name, score);
+                new score(name, score);
             } else { // next button
                 if (groupoptions.getSelection() == null) {
                    useranswers[count][0] = "";
@@ -308,6 +308,6 @@ public class Quiz extends JFrame implements ActionListener {
     }
     
     public static void main(String[] args) {
-        new Quiz("User");
+        new quiz("User");
     }
 }

@@ -4,9 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Score extends JFrame implements ActionListener {
+public class score extends JFrame implements ActionListener {
 
-    Score(String name, int score) {
+    score(String name, int score) {
         setBounds(400, 150, 750, 550);
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
@@ -40,10 +40,10 @@ public class Score extends JFrame implements ActionListener {
     
     public void actionPerformed(ActionEvent ae) {
         setVisible(false);
-        new Login();
+        new login();
     }
 
     public static void main(String[] args) {
-        new Score("User", 0);
+        new score("User", 0);
     }
 }
