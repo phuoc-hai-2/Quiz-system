@@ -220,7 +220,7 @@ public class quiz extends JFrame implements ActionListener {
                 }
             }
             setVisible(false);
-            new Score(name, score);
+            new score(name, score);
         }
     }
     
@@ -275,7 +275,7 @@ public class quiz extends JFrame implements ActionListener {
                     }
                 }
                 setVisible(false);
-                new Score(name, score);
+                new score(name, score);
             } else { // next button
                 if (groupoptions.getSelection() == null) {
                    useranswers[count][0] = "";
@@ -308,6 +308,6 @@ public class quiz extends JFrame implements ActionListener {
     }
     
     public static void main(String[] args) {
-        new Quiz("User");
+        new quiz("User");
     }
 }
