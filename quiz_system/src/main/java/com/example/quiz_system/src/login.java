@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Login extends JFrame implements ActionListener{
+public class login extends JFrame implements ActionListener{
  
     JButton rules, back;
     JTextField tfname;
     
-    Login() {
+    login() {
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         
@@ -58,13 +58,13 @@ public class Login extends JFrame implements ActionListener{
         if (ae.getSource() == rules) {
             String name = tfname.getText();
             setVisible(false);
-            new Rules(name);
+            new rules(name);
         } else if (ae.getSource() == back) {
             setVisible(false);
         }
     }
     
     public static void main(String[] args) {
-        new Login();
+        new login();
     }
 }
